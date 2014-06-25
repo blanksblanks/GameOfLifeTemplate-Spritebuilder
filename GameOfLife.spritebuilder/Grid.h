@@ -13,4 +13,9 @@
 @property (nonatomic, assign) int totalAlive; // will be used to store current game stats for display
 @property (nonatomic, assign) int generation;
 
+- (void)evolveStep;
+- (void)countNeighbors;
+- (void)updateCreatures;
+
+
 @end

@@ -10,8 +10,4 @@
 
 @interface MainScene : CCSprite
 
-- (void)evolveStep;
-- (int)countNeighbors;
-- (BOOL)updateCreatures;
-
 @end
