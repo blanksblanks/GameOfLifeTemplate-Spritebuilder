@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		622DF6271959CCAA00749F98 /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 622DF6261959CCAA00749F98 /* Grid.m */; };
 		622DF62B1959CCC900749F98 /* Creature.m in Sources */ = {isa = PBXBuildFile; fileRef = 622DF62A1959CCC900749F98 /* Creature.m */; };
+		622DF62E1959E9DE00749F98 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 622DF62D1959E9DE00749F98 /* MainScene.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -62,6 +63,8 @@
 		622DF6261959CCAA00749F98 /* Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grid.m; sourceTree = "<group>"; };
 		622DF6291959CCC900749F98 /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creature.h; sourceTree = "<group>"; };
 		622DF62A1959CCC900749F98 /* Creature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creature.m; sourceTree = "<group>"; };
+		622DF62C1959E9DD00749F98 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
+		622DF62D1959E9DE00749F98 /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScene.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 			children = (
 				622DF6251959CCAA00749F98 /* Grid.h */,
 				622DF6261959CCAA00749F98 /* Grid.m */,
+				622DF62C1959E9DD00749F98 /* MainScene.h */,
+				622DF62D1959E9DE00749F98 /* MainScene.m */,
 				622DF6291959CCC900749F98 /* Creature.h */,
 				622DF62A1959CCC900749F98 /* Creature.m */,
 				B737893C1807616C0076A88C /* Source */,
@@ -355,6 +360,7 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				622DF6271959CCAA00749F98 /* Grid.m in Sources */,
 				622DF62B1959CCC900749F98 /* Creature.m in Sources */,
+				622DF62E1959E9DE00749F98 /* MainScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

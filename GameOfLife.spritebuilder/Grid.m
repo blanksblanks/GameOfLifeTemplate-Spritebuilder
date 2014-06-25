@@ -20,11 +20,11 @@ static const int GRID_COLUMNS = 10;
     float _cellHeight;
 }
 
-- (void)onEnter
+- (void)onEnter // method to activate touch handling on the grid
 {
     [super onEnter];
     
-    [self setupGrid];
+    [self setupGrid]; // create method next
     
     // accept touches on the grid
     self.userInteractionEnabled = YES;
@@ -60,13 +60,14 @@ static const int GRID_COLUMNS = 10;
             // make creatures visible to test this method, remove this once we know we have filled the grid properly
             // creature.isAlive = YES;
             
-            x+=_cellWidth;
+            x+=_cellWidth; // after positinioning a Creature we increase x variable
         }
         
-        y += _cellHeight;
+        y += _cellHeight; // after completing row we increase y variable
     }
 }
 
+// getting touches is easy in Cocos2D because any class that is a CCNode or inherits from it will automatically call a method called touchBegan when the player touches it. All we need to do is create a touchBegan method and it gets called automatically (because we userInteractionEnabled to Yes earlier)
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
     //get the x,y coordinates of the touch
@@ -74,9 +75,11 @@ static const int GRID_COLUMNS = 10;
     
     //get the Creature at that location
     Creature *creature = [self creatureForTouchPosition:touchLocation];
+    // create creatureFortouchPosition method next
     
     //invert it's state - kill it if it's alive, bring it to life if it's dead.
     creature.isAlive = !creature.isAlive;
+    // when you access a property you've created like isAlive a method called setPropertyName is atuomatically called. In this case, setIsAlive. If you don't create one yourself, it'll just set the property to whatever you pass in. In our case, we created a custom one in Creature.m that not only sets the property, but makes Creatures' visibility change depending on their state as well! This is why your Creatures will automatically go from visible to invisible when you tap on them.
 }
 
 - (Creature *)creatureForTouchPosition:(CGPoint)touchPosition
