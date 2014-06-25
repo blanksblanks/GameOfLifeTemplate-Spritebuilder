@@ -109,6 +109,6 @@
     return isIndexValid;
 }
 
-- (int)updateCreatures
+- (void)
 
 @end
