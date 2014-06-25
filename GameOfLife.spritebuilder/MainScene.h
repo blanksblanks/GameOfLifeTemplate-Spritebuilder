@@ -2,7 +2,7 @@
 //  MainScene.h
 //  GameOfLife
 //
-//  Created by Nina Baculinao on 6/24/14.
+//  Created by Nina Baculinao on 6/25/14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
@@ -12,6 +12,6 @@
 
 - (void)evolveStep;
 - (int)countNeighbors;
-- (int)updateCreatures;
+- (BOOL)updateCreatures;
 
 @end
