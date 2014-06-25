@@ -47,6 +47,4 @@
     _populationLabel.string = [NSString stringWithFormat:@"%d", _grid.totalAlive];
 }
 
-
-
 @end
