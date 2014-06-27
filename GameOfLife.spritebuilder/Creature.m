@@ -10,6 +10,11 @@
 
 @implementation Creature
 
+// it's okay not to have super in init so long as it goes back to an init that did have super in the file
+//- (instancetype) init {
+//    return [self initCreature];
+//}
+
 // initializer sets image of creature to bubble.png and initializes them as not alive
 - (instancetype)initCreature {
     // since we made Creature inherit from CCSprite, 'super' below refers to CCSprite
@@ -17,6 +22,8 @@
     
     if (self) {
         self.isAlive = NO;
+        // [self setIsAlive:NO];
+        // _isAlive = NO;
     }
     
     return self;
@@ -30,6 +37,27 @@
     
     // 'visible' is a property of any class that inherits from CCNode. CCSprite is a subclass of CCNode, and Creature is a subclass of CCSprite, so Creatures have a visible property
     self.visible = _isAlive;
+    // same as [self setVisible:_isAlive];
+    
+    // just as these are the same
+    // BOOL currentlyVisible;
+    // currentlyVisible = [self visible];
+    // currentlyVisible = self.visible;
+    
+    // method/dot syntax vs _variableName
+    // dot syntax calls the method
+    // just underscore just sets the variable
 }
+
+//setter
+//- (void)setIsAlive:(BOOL)newState {
+//    _isAlive = newState;
+//}
+//
+//getter
+//- (BOOL)isAlive {
+//    return _isAlive;
+//}
+
 
 @end
