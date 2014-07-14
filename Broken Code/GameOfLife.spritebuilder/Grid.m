@@ -72,7 +72,8 @@ static const int GRID_COLUMNS = 10;
 {
     //get the x,y coordinates of the touch
     CGPoint touchLocation = [touch locationInNode:self];
-    
+    CCLOG(@"Touch location: %f, %f", touchLocation.x, touchLocation.y);
+
     //get the Creature at that location
     Creature *creature = [self creatureForTouchPosition:touchLocation];
     // create creatureFortouchPosition method next
@@ -142,7 +143,7 @@ static const int GRID_COLUMNS = 10;
                     }
                 }
             }
-            
+            CCLOG(@"Living neighbors: %ld", currentCreature.livingNeighbors);
         }
     }
     
