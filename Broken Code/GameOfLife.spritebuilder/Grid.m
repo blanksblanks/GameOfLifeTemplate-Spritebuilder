@@ -89,6 +89,7 @@ static const int GRID_COLUMNS = 10;
     int row = touchPosition.y/_cellHeight;
     int column = touchPosition.x/_cellWidth;
     return _gridArray[row][column];
+    CCLOG(@"Cell location: %d, %d", row, column);
 }
 
 - (void)evolveStep
