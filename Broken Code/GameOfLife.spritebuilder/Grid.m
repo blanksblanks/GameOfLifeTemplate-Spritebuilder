@@ -72,7 +72,7 @@ static const int GRID_COLUMNS = 10;
 {
     //get the x,y coordinates of the touch
     CGPoint touchLocation = [touch locationInNode:self];
-    CCLOG(@"Touch location: %f, %f", touchLocation.x, touchLocation.y);
+    CCLOG(@"Touch location: %f, %f", touchLocation.x/_cellHeight, touchLocation.y/_cellWidth);
 
     //get the Creature at that location
     Creature *creature = [self creatureForTouchPosition:touchLocation];
@@ -89,7 +89,6 @@ static const int GRID_COLUMNS = 10;
     int row = touchPosition.y/_cellHeight;
     int column = touchPosition.x/_cellWidth;
     return _gridArray[row][column];
-    CCLOG(@"Cell location: %d, %d", row, column);
 }
 
 - (void)evolveStep
