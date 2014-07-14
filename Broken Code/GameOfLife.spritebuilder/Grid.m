@@ -72,7 +72,11 @@ static const int GRID_COLUMNS = 10;
 {
     //get the x,y coordinates of the touch
     CGPoint touchLocation = [touch locationInNode:self];
-    CCLOG(@"Touch location: %f, %f", touchLocation.x/_cellHeight, touchLocation.y/_cellWidth);
+    
+    //f for testing purposes only
+    int row = touchLocation.y/_cellHeight;
+    int column = toucLocation.x/_cellWidth;
+    CCLOG(@"Touch location: %f, %f", row, column);
 
     //get the Creature at that location
     Creature *creature = [self creatureForTouchPosition:touchLocation];
