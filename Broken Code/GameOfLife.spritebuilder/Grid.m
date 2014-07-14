@@ -76,7 +76,7 @@ static const int GRID_COLUMNS = 10;
     //f for testing purposes only
     int row = touchLocation.y/_cellHeight;
     int column = toucLocation.x/_cellWidth;
-    CCLOG(@"Touch location: %f, %f", row, column);
+    CCLOG(@"Touch location: %d, %d", row, column);
 
     //get the Creature at that location
     Creature *creature = [self creatureForTouchPosition:touchLocation];
